@@ -1,0 +1,623 @@
+/* Define the Thai font 'MN Phak Kat Kaeo' */
+@font-face {
+    font-family: 'MN Phak Kat Kaeo';
+    src: url('Assets/fonts/ผักกาดแก้ว/MNPhakKatKaeo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Define the English font 'Soopafresh' */
+@font-face {
+    font-family: 'Soopafresh';
+    src: url('Assets/fonts/Soopafresh/Soopafresh.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cooper Becker Antique Regular';
+    src: url('Assets/fonts/Cooper Becker Antique Regular/Cooper Becker Antique Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Funhouse';
+    src: url('Assets/fonts/Funhouse/Funhouse.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'MN Phak Kat Kaeo', 'Soopafresh', sans-serif;
+    background-color: #F6F4F3;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img.logo-img {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-menu>a:link {
+    color: #86654B;
+    text-decoration: none;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
+
+.brand-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    font-family: 'MN Phak Kat Kaeo', 'Soopafresh', sans-serif;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+    font-family: 'MN Phak Kat Kaeo', 'Soopafresh', sans-serif;
+}
+
+.navbar-menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    color: #86654B;
+}
+
+.navbar-menu>.active-menu {
+    color: #86654B;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.blur-img {
+    width: 850px;
+    height: 300px;
+    border-radius: 25px;
+    filter: blur(10px);
+    margin-bottom: 2rem;
+    padding-left: 60px;
+    clip: rect(50px 218px 155px 82px);
+}
+
+.banner-text {
+    font-family: 'Soopafresh', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    border: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    -webkit-text-stroke: 0.25px rgb(0, 0, 0);
+}
+
+p.thumbnails-text {
+    font-size: 22px;
+    font-family: 'MN Phak Kat Kaeo', 'Soopafresh', sans-serif;
+}
+
+div.thumbnails>img.thumbnails-face {
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+img.about-img {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.content-text>h1.header-text {
+    font-family: 'Cooper Becker Antique Regular';
+    color: #ffffff;
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
+}
+
+h1.header-text {
+    text-align: center;
+    font-size: 50px;
+}
+
+p.p_content_1 {
+    font-size: 30px;
+    text-indent: 50px;
+    font-family: 'MN Phak Kat Kaeo', 'Soopafresh', sans-serif;
+}
+
+.button-container {
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.buttontoface {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #DAB892;
+    color: #ffffff;
+    border-radius: 5rem;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    font-family: 'MN Phak Kat Kaeo', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.buttontoface:hover {
+    background-color: #C3A481;
+    text-decoration: none;
+}
+
+.buttontoface:active,
+.buttontoface:focus {
+    text-decoration: none;
+}
+
+#square {
+    width: 20px;
+    height: 20px;
+    background: #94ae89;
+    margin-right: 10px;
+}
+
+#egg {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #eabbc4;
+    -webkit-border-radius: 63px 63px 63px 63px/ 108px 108px 72px 72px;
+    border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
+    margin-right: 10px;
+}
+
+#heart {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 10px;
+    top: 0;
+    width: 10px;
+    height: 15px;
+    background: #94ae89;
+    border-radius: 10px 10px 0 0;
+    transform-origin: 0 100%;
+}
+
+#heart:before {
+    transform: rotate(-45deg);
+}
+
+#heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+#down-triangle {
+    width: 0;
+    height: 0;
+    border-top: 20px solid #eabbc4;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    margin-right: 10px;
+}
+
+#circle {
+    width: 20px;
+    height: 20px;
+    background: #94ae89;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#rectangle {
+    width: 20px;
+    height: 30px;
+    background: #eabbc4;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+ul>li {
+    font-family: 'MN Phak Kat Kaeo', sans-serif;
+    font-size: 20px;
+    margin: 2rem;
+}
+
+.container-step {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 800px;
+    background-image: url('Assets/Images/Face/111.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+}
+
+.container-step::before {
+    content: "MARK UP\A TUTORIAL";
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 200px;
+    font-family: 'Funhouse', sans-serif;
+    color: rgba(203, 203, 203, 0.1);
+    z-index: 1;
+    white-space: pre;
+    pointer-events: none;
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
+    opacity:0.1;
+    font-weight: bold;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.text-backgound {
+    background-clip: text;
+    color: transparent;
+}
+
+.face-img {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    background-size: contain;
+}
+
+.arrow-1 {
+    background-image: url('Assets/Images/Face/1.png');
+    position: absolute;
+    background-size: contain;
+    transform: rotate(240deg);
+    top: 130px;
+    left: 200px;
+    width: 500px;
+    height: 150px;
+}
+
+.arrow-2 {
+    background-image: url('Assets/Images/Face/1.png');
+    position: absolute;
+    background-size: contain;
+    transform: rotate(-40deg);
+    top: 170px;
+    left: 530px;
+    width: 500px;
+    height: 150px;
+}
+
+.arrow-3 {
+    background-image: url('Assets/Images/Face/1.png');
+    position: absolute;
+    background-size: contain;
+    transform: rotate(225deg);
+    bottom: 350px;
+    left: 270px;
+    width: 300px;
+    height: 100px;
+}
+
+.arrow-4 {
+    background-image: url('Assets/Images/Face/1.png');
+    position: absolute;
+    background-size: contain;
+    transform: rotate(-10deg);
+    bottom: 320px;
+    right: 230px;
+    width: 450px;
+    height: 100px;
+}
+
+.face-img2 {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    background-size: contain;
+}
+
+.arrow-21 {
+    background-image: url('Assets/Images/Face/1.png');
+    position: absolute;
+    background-size: contain;
+    transform: rotate(250deg);
+    top: 130px;
+    left: 220px;
+    width: 400px;
+    height: 220px;
+}
+
+.arrow-22 {
+    background-image: url('Assets/Images/Face/1.png');
+    position: absolute;
+    background-size: contain;
+    transform: rotate(-37deg);
+    top: 170px;
+    right: 160px;
+    width: 550px;
+    height: 140px;
+}
+
+.arrow-23 {
+    background-image: url('Assets/Images/Face/1.png');
+    position: absolute;
+    background-size: contain;
+    transform: rotate(190deg);
+    bottom: 350px;
+    left: 270px;
+    width: 280px;
+    height: 100px;
+}
+
+.arrow-24 {
+    background-image: url('Assets/Images/Face/1.png');
+    position: absolute;
+    background-size: contain;
+    transform: rotate(-10deg);
+    bottom: 320px;
+    right: 230px;
+    width: 450px;
+    height: 100px;
+}
+
+.face-img3 {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    background-size: contain;
+    top: 100px;
+}
+
+.arrow-31 {
+    background-image: url('Assets/Images/Face/1.png');
+    position: absolute;
+    background-size: contain;
+    transform: rotate(220deg);
+    top: 100px;
+    left: 220px;
+    width: 400px;
+    height: 220px;
+}
+
+.arrow-32 {
+    background-image: url('Assets/Images/Face/1.png');
+    position: absolute;
+    background-size: contain;
+    transform: rotate(-37deg);
+    top: 100px;
+    right: 160px;
+    width: 550px;
+    height: 140px;
+}
+
+.arrow-33 {
+    background-image: url('Assets/Images/Face/1.png');
+    position: absolute;
+    background-size: contain;
+    transform: rotate(190deg);
+    bottom: 350px;
+    left: 270px;
+    width: 300px;
+    height: 100px;
+}
+
+.arrow-34 {
+    background-image: url('Assets/Images/Face/1.png');
+    position: absolute;
+    background-size: contain;
+    transform: rotate(0deg);
+    bottom: 360px;
+    right: 230px;
+    width: 430px;
+    height: 100px;
+}
+
+.step {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 25px;
+    max-width: 300px;
+    filter: drop-shadow(0px 0px 5px #ff0000);
+    font-family: 'MN Phak Kat Kaeo', sans-serif;
+}
+
+.step22 {
+    position: absolute;
+    background: #ebd29c;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 25px;
+    max-width: 300px;
+    filter: drop-shadow(0px 0px 5px #fad178);
+    font-family: 'MN Phak Kat Kaeo', sans-serif;
+}
+
+.step32 {
+    position: absolute;
+    background: #bf6c6b;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 25px;
+    max-width: 300px;
+    filter: drop-shadow(0px 0px 5px #f58c8a);
+    font-family: 'MN Phak Kat Kaeo', sans-serif;
+}
+
+.step1 {
+    top: 10px;
+    left: 20px;
+    text-align: center;
+    color: black;
+}
+
+.step2 {
+    top: 20px;
+    right: 20px;
+    text-align: center;
+    color: black;
+}
+
+.step3 {
+    top: 300px;
+    left: 20px;
+    text-align: center;
+    color: black;
+}
+
+.step4 {
+    top: 320px;
+    right: 20px;
+    text-align: center;
+    color: black;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    /* Adjust this value to position vertically */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    color: #ffffff;
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
+    font-size: 35px;
+    font-family: 'Cooper Becker Antique Regular', sans-serif;
+}
+
+div.title {
+    color: #ffffff;
+    margin-top: 180px;
+}
+
+img.title-img1 {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+
+h1.header-contact {
+    margin-top: 70px;
+    color: #ffffff;
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
+    font-family: 'Cooper Becker Antique Regular', sans-serif;
+}
+
+b.email-contact {
+    font-family: 'Cooper Becker Antique Regular', sans-serif;
+}
+
+.user-group {
+    background-color: #d1c8c1;
+    margin-top: 70px;
+}
+
+p.user-member {
+    padding-left: 10px;
+    font-family: 'MN Phak Kat Kaeo', sans-serif;
+    font-size: 25px;
+}
+
+.user-department {
+    background-color: #d1c8c1;
+}
+
+p.department {
+    font-family: 'MN Phak Kat Kaeo', sans-serif;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.user-techer {
+    background-color: #d1c8c1;
+}
+
+p.techer {
+    font-family: 'MN Phak Kat Kaeo', sans-serif;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.face-eye {
+    width: 700px;
+    height: 300px;
+    display: block;
+    margin: 0;
+}
+
+.container-details {
+    font-family: 'MN Phak Kat Kaeo', sans-serif;
+}
+
+b.header-content-shop {
+    font-size: 28px;
+}
+
+p.p-content-shop {
+    font-size: 25px;
+    
+}
+
+p.p-content-shop2 {
+    font-size: 25px;
+}
+
+.face-mouse {
+    width: 700px;
+    height: 300px;
+}
+
+.button-container-shop {
+    text-align: end;
+}
